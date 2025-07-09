@@ -1,0 +1,15 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended"
+  ],
+  "rangeStrategy": "bump",
+  "additionalBranchPrefix": "{{parentDir}}/",
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/.yarn/**",
+    "**/wp-admin/**",
+    "**/wp-includes/**"
+  ]
+}
