@@ -5,7 +5,7 @@
   ],
   "rangeStrategy": "bump",
   "additionalBranchPrefix": "{{{replace '^/$' '' '{{packageFileDir}}/'}}}",
-  "commitMessageSuffix": "{{{replace '^in /$' '' 'in {{parentDir}}'}}}",
+  "commitMessageSuffix": "{{{replace '^in $' '' 'in {{parentDir}}'}}}",
   "ignorePaths": [
     "**/node_modules/**",
     "**/bower_components/**",
