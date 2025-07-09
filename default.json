@@ -12,5 +12,12 @@
     "**/.yarn/**",
     "**/wp-admin/**",
     "**/wp-includes/**"
-  ]
+  ],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "recreateWhen": "always",
+    "schedule": [
+      "after 8am on monday"
+    ]
+  }
 }
