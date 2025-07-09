@@ -4,7 +4,7 @@
     "config:recommended"
   ],
   "rangeStrategy": "bump",
-  "additionalBranchPrefix": "{{parentDir}}/",
+  "additionalBranchPrefix": "{{{replace '^/$' '' parentDir}}}",
   "ignorePaths": [
     "**/node_modules/**",
     "**/bower_components/**",
