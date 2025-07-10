@@ -14,7 +14,7 @@
     "**/wp-admin/**",
     "**/wp-includes/**"
   ],
-  "addLabels": ["dependencies", "{{{replace '^js$' 'javascript' categories}}}"],
+  "addLabels": ["dependencies", "{{#if (equals categories 'js')}}javascript{{else}}{{{categories}}}{{/if}}"],
   "lockFileMaintenance": {
     "enabled": true,
     "recreateWhen": "always",
