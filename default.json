@@ -65,6 +65,10 @@
         "**/.yarn/sdks/**"
       ],
       "enabled": false
+    },
+    {
+      "matchPackageNames": ["firebase", "@firebase/**"],
+      "groupName": "firebase"
     }
   ]
 }
