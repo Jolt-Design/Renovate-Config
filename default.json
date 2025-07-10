@@ -14,7 +14,10 @@
     "**/wp-admin/**",
     "**/wp-includes/**"
   ],
-  "addLabels": ["dependencies", "{{#if (containsString categories 'js')}}javascript{{else}}{{{categories}}}{{/if}}"],
+  "addLabels": [
+    "dependencies",
+    "{{#if (containsString categories 'js')}}javascript{{else}}{{{categories}}}{{/if}}"
+  ],
   "lockFileMaintenance": {
     "enabled": true,
     "recreateWhen": "always",
@@ -37,7 +40,9 @@
       "matchPackageNames": [
         "node"
       ],
-      "matchFileNames": ["**/package.json"],
+      "matchFileNames": [
+        "**/package.json"
+      ],
       "rangeStrategy": "widen"
     },
     {
@@ -45,12 +50,18 @@
         "php",
         "containerbase/php-prebuild"
       ],
-      "matchDepTypes": ["require"],
-      "matchFileNames": ["**/composer.json"],
+      "matchDepTypes": [
+        "require"
+      ],
+      "matchFileNames": [
+        "**/composer.json"
+      ],
       "rangeStrategy": "widen"
     },
     {
-      "matchFileNames": ["**/.yarn/sdks/**"],
+      "matchFileNames": [
+        "**/.yarn/sdks/**"
+      ],
       "enabled": false
     }
   ]
