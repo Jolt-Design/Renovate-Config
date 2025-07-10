@@ -16,7 +16,8 @@
   ],
   "addLabels": [
     "dependencies",
-    "{{#if (containsString categories 'js')}}javascript{{else}}{{{categories}}}{{/if}}"
+    "{{#if (containsString categories 'js')}}javascript{{else}}{{{categories}}}{{/if}}",
+    "{{#if (equals vulnerabilitySeverity 'UNKNOWN')}}{{else}}severity:{{{lowercase vulnerabilitySeverity}}}{{/if}}"
   ],
   "lockFileMaintenance": {
     "enabled": true,
