@@ -12,6 +12,7 @@
     "**/node_modules/**",
     "**/bower_components/**",
     "**/.yarn/**",
+    "**/.yarn/sdks/**",
     "**/wp-admin/**",
     "**/wp-includes/**"
   ],
