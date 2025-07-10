@@ -48,6 +48,10 @@
       "matchDepTypes": ["require"],
       "matchFileNames": ["**/composer.json"],
       "rangeStrategy": "widen"
+    },
+    {
+      "matchFileNames": ["**/.yarn/sdks/**"],
+      "enabled": false
     }
   ]
 }
