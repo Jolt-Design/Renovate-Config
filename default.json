@@ -19,5 +19,17 @@
     "schedule": [
       "after 8am on monday"
     ]
-  }
+  },
+  "packageRules": [
+    {
+      "matchPackageNames": [
+        "hashicorp/terraform"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "enabled": false
+    }
+  ]
 }
