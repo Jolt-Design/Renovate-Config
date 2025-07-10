@@ -17,12 +17,11 @@
   ],
   "addLabels": [
     "dependencies",
-    "{{{ toJSON categories }}}",
-    "{{#if (containsString (lookup (split categories ',') 0) 'js')}}javascript{{else}}{{{ lookup (split categories ',') 0 }}}{{/if}}",
-    "{{#if (containsString (lookup (split categories ',') 1) 'js')}}javascript{{else}}{{{ lookup (split categories ',') 1 }}}{{/if}}",
-    "{{#if (containsString (lookup (split categories ',') 2) 'js')}}javascript{{else}}{{{ lookup (split categories ',') 2 }}}{{/if}}",
-    "{{#if (containsString (lookup (split categories ',') 3) 'js')}}javascript{{else}}{{{ lookup (split categories ',') 3 }}}{{/if}}",
-    "{{#if (containsString (lookup (split categories ',') 4) 'js')}}javascript{{else}}{{{ lookup (split categories ',') 4 }}}{{/if}}",
+    "{{#if (equals (lookup categories 0) 'js')}}javascript{{else}}{{{ lookup categories 0 }}}{{/if}}",
+    "{{#if (equals (lookup categories 1) 'js')}}javascript{{else}}{{{ lookup categories 1 }}}{{/if}}",
+    "{{#if (equals (lookup categories 2) 'js')}}javascript{{else}}{{{ lookup categories 2 }}}{{/if}}",
+    "{{#if (equals (lookup categories 3) 'js')}}javascript{{else}}{{{ lookup categories 3 }}}{{/if}}",
+    "{{#if (equals (lookup categories 4) 'js')}}javascript{{else}}{{{ lookup categories 4 }}}{{/if}}",
     "{{#if isVulnerabilityAlert}}vulnerability{{/if}}",
     "{{#if isVulnerabilityAlert}}severity:{{{ lowercase vulnerabilitySeverity }}}{{/if}}"
   ],
