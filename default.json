@@ -6,7 +6,7 @@
   "rangeStrategy": "bump",
   "additionalBranchPrefix": "{{#if (equals packageFileDir '')}}{{else}}{{packageFileDir}}/{{/if}}",
   "commitMessageSuffix": "{{#if (equals packageFileDir '')}}{{else}}in {{packageFileDir}}/{{/if}}",
-  "commitMessageExtra": "{{#if currentVersion}}from {{{currentVersion}}} {{/if}}to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}",
+  "commitMessageExtra": "{{#if displayFrom}}from {{{displayFrom}}} {{/if}}to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}",
   "ignorePaths": [
     "**/node_modules/**",
     "**/bower_components/**",
