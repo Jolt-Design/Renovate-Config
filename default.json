@@ -37,14 +37,14 @@
         "node"
       ],
       "matchFileNames": ["**/package.json"],
-      "rangeStrategy": "auto"
+      "rangeStrategy": "widen"
     },
     {
       "matchPackageNames": [
         "php"
       ],
       "matchFileNames": ["**/composer.json"],
-      "rangeStrategy": "auto"
+      "rangeStrategy": "widen"
     }
   ]
 }
