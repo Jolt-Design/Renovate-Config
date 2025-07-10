@@ -4,9 +4,9 @@
     "config:recommended"
   ],
   "rangeStrategy": "bump",
-  "additionalBranchPrefix": "{{#if (equals packageFileDir '')}}{{else}}{{packageFileDir}}/{{/if}}",
-  "commitMessageSuffix": "{{#if (equals packageFileDir '')}}{{else}}in {{packageFileDir}}/{{/if}}",
-  "commitMessageExtra": "{{#if displayFrom}}from {{{displayFrom}}} {{/if}}to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}",
+  "additionalBranchPrefix": "{{#if (equals packageFileDir '')}}{{else}}{{{ packageFileDir }}}/{{/if}}",
+  "commitMessageSuffix": "{{#if (equals packageFileDir '')}}{{else}}in {{{ packageFileDir }}}/{{/if}}",
+  "commitMessageExtra": "{{#if displayFrom}}from {{{ displayFrom }}} {{/if}}to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}",
   "ignorePaths": [
     "**/node_modules/**",
     "**/bower_components/**",
@@ -16,8 +16,8 @@
   ],
   "addLabels": [
     "dependencies",
-    "{{#if (containsString categories 'js')}}javascript{{else}}{{{categories}}}{{/if}}",
-    "{{#if vulnerabilitySeverity}}{{#if (equals vulnerabilitySeverity 'UNKNOWN')}}{{else}}severity:{{{lowercase vulnerabilitySeverity}}}{{/if}}{{/if}}"
+    "{{#if (containsString categories 'js')}}javascript{{else}}{{{ categories }}}{{/if}}",
+    "{{#if vulnerabilitySeverity}}{{#if (equals vulnerabilitySeverity 'UNKNOWN')}}{{else}}severity:{{{ lowercase vulnerabilitySeverity }}}{{/if}}{{/if}}"
   ],
   "lockFileMaintenance": {
     "enabled": true,
