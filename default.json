@@ -41,8 +41,10 @@
     },
     {
       "matchPackageNames": [
-        "php"
+        "php",
+        "containerbase/php-prebuild"
       ],
+      "matchDepTypes": ["require"],
       "matchFileNames": ["**/composer.json"],
       "rangeStrategy": "widen"
     }
