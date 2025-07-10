@@ -30,6 +30,20 @@
         "patch"
       ],
       "enabled": false
+    },
+    {
+      "matchPackageNames": [
+        "node"
+      ],
+      "matchFileNames": ["**/package.json"],
+      "rangeStrategy": "auto"
+    },
+    {
+      "matchPackageNames": [
+        "php"
+      ],
+      "matchFileNames": ["**/composer.json"],
+      "rangeStrategy": "auto"
     }
   ]
 }
