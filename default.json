@@ -23,7 +23,7 @@
     "{{#if (equals (lookup categories 3) 'js')}}javascript{{else}}{{{ lookup categories 3 }}}{{/if}}",
     "{{#if (equals (lookup categories 4) 'js')}}javascript{{else}}{{{ lookup categories 4 }}}{{/if}}",
     "{{#if isVulnerabilityAlert}}vulnerability{{/if}}",
-    "{{#if (and isVulnerabilityAlert vulnerabilitySeverity)}}severity:{{{vulnerabilitySeverity}}}{{/if}}"
+    "{{#if (and isVulnerabilityAlert vulnerabilitySeverity)}}severity:{{{lowercase vulnerabilitySeverity}}}{{/if}}"
   ],
   "lockFileMaintenance": {
     "enabled": true,
