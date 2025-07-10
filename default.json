@@ -13,7 +13,7 @@
     "**/wp-admin/**",
     "**/wp-includes/**"
   ],
-  "addLabels": ["dependencies", "{{categories}}"],
+  "addLabels": ["dependencies", "{{{replace '^js$' 'javascript' categories}}}"],
   "lockFileMaintenance": {
     "enabled": true,
     "recreateWhen": "always",
