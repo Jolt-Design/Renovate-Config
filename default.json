@@ -78,8 +78,7 @@
     },
     {
       "matchCategories": "terraform",
-      "matchUpdateTypes": ["minor", "patch"],
-      "rangeStrategy": "widen"
+      "rangeStrategy": "update-lockfile"
     }
   ]
 }
