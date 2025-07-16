@@ -75,6 +75,11 @@
     {
       "matchPackageNames": ["firebase", "@firebase/**"],
       "groupName": "firebase"
+    },
+    {
+      "matchCategories": "terraform",
+      "matchUpdateTypes": ["minor", "patch"],
+      "rangeStrategy": "widen"
     }
   ]
 }
