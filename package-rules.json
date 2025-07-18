@@ -1,0 +1,34 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "rangeStrategy": "bump",
+	"packageRules": [
+		{
+			"matchPackageNames": ["hashicorp/terraform"],
+			"matchUpdateTypes": ["minor", "patch"],
+			"enabled": false
+		},
+		{
+			"matchPackageNames": ["node"],
+			"matchFileNames": ["**/package.json"],
+			"rangeStrategy": "widen"
+		},
+		{
+			"matchPackageNames": ["php", "containerbase/php-prebuild"],
+			"matchDepTypes": ["require"],
+			"matchFileNames": ["**/composer.json"],
+			"rangeStrategy": "widen"
+		},
+		{
+			"matchFileNames": ["**/.yarn/sdks/**"],
+			"enabled": false
+		},
+		{
+			"matchPackageNames": ["firebase", "@firebase/**"],
+			"groupName": "firebase"
+		},
+		{
+			"matchCategories": "terraform",
+			"rangeStrategy": "update-lockfile"
+		}
+	]
+}

@@ -1,0 +1,11 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"ignorePaths": [
+		"**/node_modules/**",
+		"**/bower_components/**",
+		"**/.yarn/**",
+		"**/.yarn/sdks/**",
+		"**/wp-admin/**",
+		"**/wp-includes/**"
+	]
+}

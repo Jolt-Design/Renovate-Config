@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "addLabels": [
+    "dependencies",
+    "{{#if (equals (lookup categories 0) 'js')}}javascript{{else}}{{{ lookup categories 0 }}}{{/if}}",
+    "{{#if (equals (lookup categories 1) 'js')}}javascript{{else}}{{{ lookup categories 1 }}}{{/if}}",
+    "{{#if (equals (lookup categories 2) 'js')}}javascript{{else}}{{{ lookup categories 2 }}}{{/if}}",
+    "{{#if (equals (lookup categories 3) 'js')}}javascript{{else}}{{{ lookup categories 3 }}}{{/if}}",
+    "{{#if (equals (lookup categories 4) 'js')}}javascript{{else}}{{{ lookup categories 4 }}}{{/if}}",
+    "{{#if isVulnerabilityAlert}}vulnerability{{/if}}",
+    "{{#if (and isVulnerabilityAlert vulnerabilitySeverity)}}severity:{{{lowercase vulnerabilitySeverity}}}{{/if}}"
+  ]
+}

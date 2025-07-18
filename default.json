@@ -4,85 +4,13 @@
     "config:recommended",
     "customManagers:biomeVersions",
     "customManagers:githubActionsVersions",
-    "customManagers:tfvarsVersions"
-  ],
-  "rangeStrategy": "bump",
-  "includeForks": true,
-  "timezone": "Europe/London",
-  "additionalBranchPrefix": "{{#if (equals packageFileDir '')}}{{else}}{{{ packageFileDir }}}/{{/if}}",
-  "commitMessageSuffix": "{{#if (equals packageFileDir '')}}{{else}}in /{{{ packageFileDir }}}/{{/if}}",
-  "commitMessageExtra": "{{#if displayFrom}}from {{{ replace '\\+sha512\\.[0-9a-f]+$' '' displayFrom }}} {{/if}}to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}",
-  "ignorePaths": [
-    "**/node_modules/**",
-    "**/bower_components/**",
-    "**/.yarn/**",
-    "**/.yarn/sdks/**",
-    "**/wp-admin/**",
-    "**/wp-includes/**"
-  ],
-  "addLabels": [
-    "dependencies",
-    "{{#if (equals (lookup categories 0) 'js')}}javascript{{else}}{{{ lookup categories 0 }}}{{/if}}",
-    "{{#if (equals (lookup categories 1) 'js')}}javascript{{else}}{{{ lookup categories 1 }}}{{/if}}",
-    "{{#if (equals (lookup categories 2) 'js')}}javascript{{else}}{{{ lookup categories 2 }}}{{/if}}",
-    "{{#if (equals (lookup categories 3) 'js')}}javascript{{else}}{{{ lookup categories 3 }}}{{/if}}",
-    "{{#if (equals (lookup categories 4) 'js')}}javascript{{else}}{{{ lookup categories 4 }}}{{/if}}",
-    "{{#if isVulnerabilityAlert}}vulnerability{{/if}}",
-    "{{#if (and isVulnerabilityAlert vulnerabilitySeverity)}}severity:{{{lowercase vulnerabilitySeverity}}}{{/if}}"
-  ],
-  "lockFileMaintenance": {
-    "enabled": true,
-    "recreateWhen": "always",
-    "schedule": [
-      "after 8am on monday"
-    ]
-  },
-  "packageRules": [
-    {
-      "matchPackageNames": [
-        "hashicorp/terraform"
-      ],
-      "matchUpdateTypes": [
-        "minor",
-        "patch"
-      ],
-      "enabled": false
-    },
-    {
-      "matchPackageNames": [
-        "node"
-      ],
-      "matchFileNames": [
-        "**/package.json"
-      ],
-      "rangeStrategy": "widen"
-    },
-    {
-      "matchPackageNames": [
-        "php",
-        "containerbase/php-prebuild"
-      ],
-      "matchDepTypes": [
-        "require"
-      ],
-      "matchFileNames": [
-        "**/composer.json"
-      ],
-      "rangeStrategy": "widen"
-    },
-    {
-      "matchFileNames": [
-        "**/.yarn/sdks/**"
-      ],
-      "enabled": false
-    },
-    {
-      "matchPackageNames": ["firebase", "@firebase/**"],
-      "groupName": "firebase"
-    },
-    {
-      "matchCategories": "terraform",
-      "rangeStrategy": "update-lockfile"
-    }
+    "customManagers:tfvarsVersions",
+    "github>Jolt-Design/Renovate-Config:commit-messages",
+    "github>Jolt-Design/Renovate-Config:ignore-paths",
+    "github>Jolt-Design/Renovate-Config:labels",
+    "github>Jolt-Design/Renovate-Config:local",
+    "github>Jolt-Design/Renovate-Config:package-rules",
+    "github>Jolt-Design/Renovate-Config:separate-branches",
+    "github>Jolt-Design/Renovate-Config:weekly-lockfiles"
   ]
 }
