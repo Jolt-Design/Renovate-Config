@@ -8,6 +8,7 @@
   ],
   "rangeStrategy": "bump",
   "includeForks": true,
+  "timezone": "Europe/London",
   "additionalBranchPrefix": "{{#if (equals packageFileDir '')}}{{else}}{{{ packageFileDir }}}/{{/if}}",
   "commitMessageSuffix": "{{#if (equals packageFileDir '')}}{{else}}in /{{{ packageFileDir }}}/{{/if}}",
   "commitMessageExtra": "{{#if displayFrom}}from {{{ replace '\\+sha512\\.[0-9a-f]+$' '' displayFrom }}} {{/if}}to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}",
