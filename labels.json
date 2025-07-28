@@ -7,6 +7,10 @@
     "{{#if (equals (lookup categories 2) 'js')}}javascript{{else}}{{{ lookup categories 2 }}}{{/if}}",
     "{{#if (equals (lookup categories 3) 'js')}}javascript{{else}}{{{ lookup categories 3 }}}{{/if}}",
     "{{#if (equals (lookup categories 4) 'js')}}javascript{{else}}{{{ lookup categories 4 }}}{{/if}}",
+    "{{#if (equals (lookup categories 6) 'js')}}javascript{{else}}{{{ lookup categories 6 }}}{{/if}}",
+    "{{#if (equals (lookup categories 7) 'js')}}javascript{{else}}{{{ lookup categories 7 }}}{{/if}}",
+    "{{#if (equals (lookup categories 8) 'js')}}javascript{{else}}{{{ lookup categories 8 }}}{{/if}}",
+    "{{#if (equals (lookup categories 9) 'js')}}javascript{{else}}{{{ lookup categories 9 }}}{{/if}}",
     "{{#if isVulnerabilityAlert}}vulnerability{{/if}}",
     "{{#if (and isVulnerabilityAlert vulnerabilitySeverity)}}severity:{{{lowercase vulnerabilitySeverity}}}{{/if}}"
   ]
