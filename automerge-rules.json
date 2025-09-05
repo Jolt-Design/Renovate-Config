@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "matchPackageNames": ["@joltdesign/scripts", "jolt-wp-updater"],
+      "automerge": true
+    },
+    {
+      "matchPackageNames": ["@types/**"],
+      "automerge": true
+    }
+  ]
+}

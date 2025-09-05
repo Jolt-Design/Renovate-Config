@@ -5,6 +5,7 @@
     "customManagers:biomeVersions",
     "customManagers:githubActionsVersions",
     "customManagers:tfvarsVersions",
+    "github>Jolt-Design/Renovate-Config:automerge-rules",
     "github>Jolt-Design/Renovate-Config:commit-messages",
     "github>Jolt-Design/Renovate-Config:ignore-paths",
     "github>Jolt-Design/Renovate-Config:labels",
