@@ -6,6 +6,11 @@
       "automerge": true
     },
     {
+      "matchPackageNames": ["yarn", "yarnpkg/berry"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
+    },
+    {
       "matchPackageNames": ["@types/**"],
       "matchUpdateTypes": ["patch"],
       "automerge": true
