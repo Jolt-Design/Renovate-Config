@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    "customManagers:biomeVersions",
+    "customManagers:githubActionsVersions",
+    "customManagers:tfvarsVersions",
+    "github>Jolt-Design/Renovate-Config:commit-messages",
+    "github>Jolt-Design/Renovate-Config:ignore-paths",
+    "github>Jolt-Design/Renovate-Config:labels",
+    "github>Jolt-Design/Renovate-Config:separate-branches"
+  ]
+}

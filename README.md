@@ -34,6 +34,10 @@ Add extra info to commit messages, such as the directory being updated and the v
 
 This is the default config, pulled in if you extend the whole repo rather than an individual file.
 
+### [generic](generic.json)
+
+This is a simpler preset with the more Jolt-specific or opinionated options removed. The default preset extends this.
+
 ### [ignore-paths](ignore-paths.json)
 
 Default ignore paths. This possibly doesn't actually work!

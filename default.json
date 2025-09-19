@@ -2,16 +2,10 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended",
-    "customManagers:biomeVersions",
-    "customManagers:githubActionsVersions",
-    "customManagers:tfvarsVersions",
     "github>Jolt-Design/Renovate-Config:automerge-rules",
-    "github>Jolt-Design/Renovate-Config:commit-messages",
-    "github>Jolt-Design/Renovate-Config:ignore-paths",
-    "github>Jolt-Design/Renovate-Config:labels",
+    "github>Jolt-Design/Renovate-Config:generic",
     "github>Jolt-Design/Renovate-Config:local",
     "github>Jolt-Design/Renovate-Config:package-rules",
-    "github>Jolt-Design/Renovate-Config:separate-branches",
     "github>Jolt-Design/Renovate-Config:weekly-lockfiles"
   ]
 }
