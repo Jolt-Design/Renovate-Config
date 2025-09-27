@@ -15,6 +15,11 @@
       "automerge": true
     },
     {
+      "matchPackageNames": ["node", "nodejs", "nodejs/node"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
+    },
+    {
       "matchPackageNames": ["@types/**"],
       "matchUpdateTypes": ["patch"],
       "automerge": true
