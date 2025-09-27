@@ -10,7 +10,7 @@
       "automerge": true
     },
     {
-      "matchPackageNames": ["yarn", "yarnpkg/berry"],
+      "matchPackageNames": ["yarn", "yarnpkg/berry", "@yarnpkg/cli"],
       "matchUpdateTypes": ["minor", "patch"],
       "automerge": true
     },
