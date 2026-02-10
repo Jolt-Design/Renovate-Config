@@ -29,6 +29,14 @@
 		{
 			"matchCategories": "terraform",
 			"rangeStrategy": "update-lockfile"
-		}
+		},
+		{
+      "groupName": "Jolt PHP Docker image",
+      "groupSlug": "jolt-php",
+      "matchPackageNames": [
+        "joltdesign/php",
+        "joltdesign/wp-cli"
+      ]
+    }
 	]
 }
