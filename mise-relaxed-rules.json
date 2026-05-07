@@ -1,0 +1,11 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "matchFileNames": [
+        "**/.mise.toml"
+      ],
+      "rangeStrategy": "replace"
+    }
+  ]
+}

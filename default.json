@@ -5,6 +5,7 @@
     "github>Jolt-Design/Renovate-Config:automerge-rules",
     "github>Jolt-Design/Renovate-Config:generic",
     "github>Jolt-Design/Renovate-Config:local",
+    "github>Jolt-Design/Renovate-Config:mise-relaxed-rules",
     "github>Jolt-Design/Renovate-Config:package-rules",
     "github>Jolt-Design/Renovate-Config:weekly-lockfiles"
   ]
