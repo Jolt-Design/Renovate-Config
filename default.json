@@ -3,6 +3,7 @@
   "extends": [
     "config:recommended",
     "github>Jolt-Design/Renovate-Config:automerge-rules",
+    "github>Jolt-Design/Renovate-Config:disable-composer-php-upgrades",
     "github>Jolt-Design/Renovate-Config:generic",
     "github>Jolt-Design/Renovate-Config:local",
     "github>Jolt-Design/Renovate-Config:mise-relaxed-rules",
