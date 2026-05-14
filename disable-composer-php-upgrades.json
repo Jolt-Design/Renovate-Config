@@ -3,7 +3,7 @@
   "packageRules": [
     {
       "matchDepTypes": ["tool-constraint"],
-      "matchPackageNames": ["php"],
+      "matchDepNames": ["php"],
       "enabled": false
     }
   ]
