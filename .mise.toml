@@ -1,6 +1,6 @@
 [tools]
 "npm:@biomejs/biome" = "2.4.15"
-pre-commit = "4.6.0"
+pre-commit = "4"
 
 [tasks.setup]
 run = "pre-commit install"
