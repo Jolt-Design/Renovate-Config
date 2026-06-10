@@ -2,13 +2,13 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended",
+    "github>Jolt-Design/Renovate-Config:age-gates",
     "github>Jolt-Design/Renovate-Config:automerge-rules",
     "github>Jolt-Design/Renovate-Config:disable-composer-php-upgrades",
     "github>Jolt-Design/Renovate-Config:generic",
     "github>Jolt-Design/Renovate-Config:local",
     "github>Jolt-Design/Renovate-Config:mise-match-specificity",
     "github>Jolt-Design/Renovate-Config:package-rules",
-    "github>Jolt-Design/Renovate-Config:weekly-lockfiles",
-    "security:minimumReleaseAgeNpm"
+    "github>Jolt-Design/Renovate-Config:weekly-lockfiles"
   ]
 }
