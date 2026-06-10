@@ -11,6 +11,7 @@
     "github>Jolt-Design/Renovate-Config:package-rules",
     "github>Jolt-Design/Renovate-Config:weekly-lockfiles",
     "helpers:disableTypesNodeMajor",
+    "replacements:all",
     "security:openssf-scorecard"
   ]
 }
