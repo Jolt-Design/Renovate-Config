@@ -10,6 +10,7 @@
     "github>Jolt-Design/Renovate-Config:mise-match-specificity",
     "github>Jolt-Design/Renovate-Config:package-rules",
     "github>Jolt-Design/Renovate-Config:weekly-lockfiles",
+    "helpers:disableTypesNodeMajor",
     "security:openssf-scorecard"
   ]
 }
