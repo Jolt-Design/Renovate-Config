@@ -15,13 +15,8 @@ case "$(realpath "$file")" in
 esac
 cd "$project_dir" || exit 0
 
-if command -v mise >/dev/null 2>&1; then
-  biome=(mise exec -C "$project_dir" -- biome)
-elif command -v biome >/dev/null 2>&1; then
-  biome=(biome)
-else
-  exit 0
-fi
+command -v yarn >/dev/null 2>&1 || exit 0
+biome=(yarn biome)
 
 if ! out="$("${biome[@]}" check --write --files-ignore-unknown=true --no-errors-on-unmatched "$file" 2>&1)"; then
   echo "format hook: biome check failed for $file:" >&2

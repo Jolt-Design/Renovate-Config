@@ -11,8 +11,8 @@ Renovate fetches these presets from the default branch (`master`) of the GitHub 
 
 ## Commands
 
-- Setup: `mise install && mise run setup` (tools pinned in `.mise.toml`; the `setup` task installs the pre-commit hook).
-- Format and lint check: `mise exec -- biome check .` (fix: add `--write`). Config: `biome.json`.
+- Setup: `mise install && mise run setup` (see the `setup` task in `.mise.toml`).
+- Format and lint check: `yarn lint` (fix: `yarn lint --write`). Config: `biome.json`.
 - Validate presets: `npx --yes --package renovate -- renovate-config-validator --strict --no-global <files>`, passing every preset file. `--no-global` is required: without it, a file named on the command line is validated as global self-hosted config, not as a preset.
 
 ## Conventions
