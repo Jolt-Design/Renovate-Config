@@ -1,5 +1,5 @@
 [tools]
-"npm:@biomejs/biome" = "2.4.15"
+"npm:@biomejs/biome" = "2.6.7"
 pre-commit = "4"
 
 [tasks.setup]
