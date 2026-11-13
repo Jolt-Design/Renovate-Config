@@ -7,3 +7,10 @@ repos:
         language: system
         types: [text]
         files: "\\.(json|ya?ml|md)$"
+
+      - id: local-renovate-config-validator
+        name: renovate config validator
+        entry: yarn renovate-config-validator --strict --no-global
+        language: system
+        files: "^[^/]+\\.json$"
+        exclude: "^(biome|package)\\.json$"
