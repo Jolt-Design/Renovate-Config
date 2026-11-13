@@ -1,6 +1,6 @@
 [tools]
-"npm:@biomejs/biome" = "2.4.15"
+node = { version = "26", postinstall = "npm install -g corepack", when = "always" }
 pre-commit = "4"
 
 [tasks.setup]
-run = "pre-commit install"
+run = ["yarn install", "pre-commit install"]
