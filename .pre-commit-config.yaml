@@ -6,4 +6,4 @@ repos:
         entry: yarn biome check --write --files-ignore-unknown=true --no-errors-on-unmatched
         language: system
         types: [text]
-        files: "\\.(json|yml|md)$"
+        files: "\\.(json|ya?ml|md)$"

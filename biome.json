@@ -6,7 +6,7 @@
   },
   "files": {
     "ignoreUnknown": false,
-    "includes": ["*.json", "*.md", "*.yml", ".claude/**/*.json"]
+    "includes": ["*.json", "*.md", "*.{yml,yaml}", ".claude/**/*.json"]
   },
   "formatter": {
     "enabled": true,
