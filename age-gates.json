@@ -4,6 +4,11 @@
   "minimumReleaseAge": "1 day",
   "packageRules": [
     {
+      "description": "Do not require Minimum Release Age for Jolt's own packages",
+      "matchPackageNames": ["@joltdesign/**", "joltdesign/**", "Jolt-Design/**", "jolt-wp-updater"],
+      "minimumReleaseAge": null
+    },
+    {
       "description": "Do not require Minimum Release Age for update types that are controlled by the package manager",
       "matchUpdateTypes": ["lockFileMaintenance"],
       "minimumReleaseAge": null,
