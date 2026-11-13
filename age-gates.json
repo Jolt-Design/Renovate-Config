@@ -6,7 +6,12 @@
   "packageRules": [
     {
       "description": "Do not require Minimum Release Age for Jolt's own packages",
-      "matchPackageNames": ["@joltdesign/**", "joltdesign/**", "Jolt-Design/**", "jolt-wp-updater"],
+      "matchPackageNames": [
+        "@joltdesign/**",
+        "joltdesign/**",
+        "Jolt-Design/**",
+        "jolt-wp-updater"
+      ],
       "minimumReleaseAge": null
     },
     {
