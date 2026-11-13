@@ -1,14 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "internalChecksFilter": "strict",
+  "minimumReleaseAge": "1 day",
   "packageRules": [
     {
-      "internalChecksFilter": "strict",
-      "matchDatasources": ["npm"],
-      "minimumReleaseAge": "1 day"
-    },
-    {
       "description": "Do not require Minimum Release Age for update types that are controlled by the package manager",
-      "matchDatasources": ["npm"],
       "matchUpdateTypes": ["lockFileMaintenance"],
       "minimumReleaseAge": null,
       "prBodyNotes": [
@@ -17,7 +13,6 @@
     },
     {
       "description": "Do not require Minimum Release Age for package replacements",
-      "matchDatasources": ["npm"],
       "matchUpdateTypes": ["replacement"],
       "minimumReleaseAge": null,
       "prBodyNotes": [
@@ -26,7 +21,6 @@
     },
     {
       "description": "Do not require Minimum Release Age for package pinning",
-      "matchDatasources": ["npm"],
       "matchUpdateTypes": ["pin"],
       "minimumReleaseAge": null,
       "prBodyNotes": [
