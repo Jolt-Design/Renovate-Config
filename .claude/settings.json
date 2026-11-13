@@ -3,7 +3,8 @@
   "permissions": {
     "allow": [
       "Bash(yarn lint)",
-      "Bash(npx --yes --package renovate -- renovate-config-validator *)",
+      "Bash(yarn validate)",
+      "Bash(yarn renovate-config-validator *)",
       "Bash(gh pr view *)",
       "Bash(gh pr list *)"
     ],
