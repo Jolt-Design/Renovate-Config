@@ -10,7 +10,7 @@ Use the following to get the whole thing:
 }
 ```
 
-or you can enable individual features with the sub files, e.g.L
+or you can enable individual features with the sub files, e.g.
 
 ```json
 {
@@ -26,6 +26,14 @@ or you can enable individual features with the sub files, e.g.L
 
 An overview of the purpose of the config files.
 
+### [age-gates](age-gates.json)
+
+Holds back updates until a release has been out for a minimum time, to help avoid supply-chain attacks. Jolt's own packages and update types where Renovate can't check the release age are exempt.
+
+### [automerge-rules](automerge-rules.json)
+
+Automerges low-risk updates, such as Jolt's own packages and minor Node and Yarn updates, outside office hours.
+
 ### [commit-messages](commit-messages.json)
 
 Add extra info to commit messages, such as the directory being updated and the version being updated from.
@@ -33,6 +41,10 @@ Add extra info to commit messages, such as the directory being updated and the v
 ### [default](default.json)
 
 This is the default config, pulled in if you extend the whole repo rather than an individual file.
+
+### [disable-composer-php-upgrades](disable-composer-php-upgrades.json)
+
+Stops Renovate updating the PHP version constraint in Composer files.
 
 ### [generic](generic.json)
 
@@ -49,6 +61,10 @@ Add category labels to PRs a la Dependabot, as well as labelling vulnerability f
 ### [local](local.json)
 
 Localise Renovate for Jolt, e.g. time zones, etc.
+
+### [mise-match-specificity](mise-match-specificity.json)
+
+Keeps Mise tool versions as specific as they're written, so a major-only version like `node = "24"` stays major-only.
 
 ### [package-rules](package-rules.json)
 
