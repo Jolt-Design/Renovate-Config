@@ -34,6 +34,11 @@
       "groupName": "Jolt PHP Docker image",
       "groupSlug": "jolt-php",
       "matchPackageNames": ["joltdesign/php", "joltdesign/wp-cli"]
+    },
+    {
+      "groupName": "Biome",
+      "groupSlug": "biome",
+      "matchPackageNames": ["@biomejs/biome", "npm:@biomejs/biome"]
     }
   ]
 }
