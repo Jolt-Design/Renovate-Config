@@ -3,6 +3,7 @@
   "permissions": {
     "allow": [
       "Bash(yarn lint)",
+      "Bash(yarn lint --write)",
       "Bash(yarn validate)",
       "Bash(yarn renovate-config-validator *)",
       "Bash(gh pr view *)",
