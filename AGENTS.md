@@ -6,6 +6,8 @@ Shared [Renovate](https://docs.renovatebot.com/) presets for Jolt Design repos. 
 
 Renovate fetches these presets from the default branch (`master`) of the GitHub repo. A push to `master` changes Renovate's behaviour in every Jolt repo that extends them, on their next Renovate run. There is no release step in between: CI (`.github/workflows/check.yml`) runs after the push, so it reports a broken preset but doesn't stop it going live.
 
+Presets here extend each other as `github>Jolt-Design/Renovate-Config:<name>`, which also loads from `master`. Pointing a repo at a ref (`github>Jolt-Design/Renovate-Config#<ref>`) only changes the top-level file; everything it extends still comes from `master`.
+
 - Never push to `master` without the user's approval for that push. The guard hook asks every time.
 - Run the checks below before every commit.
 
