@@ -38,7 +38,8 @@
     {
       "groupName": "Biome",
       "groupSlug": "biome",
-      "matchPackageNames": ["@biomejs/biome", "npm:@biomejs/biome"]
+      "matchPackageNames": ["@biomejs/biome", "npm:@biomejs/biome"],
+      "matchUpdateTypes": ["major", "minor", "patch"]
     },
     {
       "description": "Pin Biome to an exact version in package.json",
