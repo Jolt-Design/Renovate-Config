@@ -23,7 +23,7 @@ Presets here extend each other as `github>Jolt-Design/Renovate-Config:<name>`, w
 - When adding a preset, also add it to `default.json` or `generic.json` if it should be on by default, and give it an entry in the Files list in `README.md`.
 - `generic.json` is for presets any repo could use; Jolt-specific or opinionated ones go in `default.json`.
 - Don't rename or delete a preset file. Other repos extend presets by file name, so a rename breaks their Renovate config. To retire a preset, empty it or make it extend its replacement.
-- Commit directly to `master` with a short imperative subject. The pre-commit hook (`.pre-commit-config.yaml`) runs both checks on staged files.
+- No branches or PRs here: commits go straight on `master`, with a short imperative subject. The pre-commit hook (`.pre-commit-config.yaml`) runs both checks on staged files.
 
 ## Integrations
 
