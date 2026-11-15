@@ -10,7 +10,7 @@ Presets here extend each other as `github>Jolt-Design/Renovate-Config:<name>`, w
 
 - Never push to `master` without the user's approval for that push. The guard hook asks every time.
 - When asking for that approval, point out changes that would merge updates without review or let them through sooner, such as widening `automerge-rules.json` or loosening `age-gates.json`.
-- Run the checks below before every commit.
+- Run `yarn lint` and `yarn validate` before every commit. The pre-commit hook (`.pre-commit-config.yaml`) runs both on staged files, but only once `mise run setup` has installed it.
 
 ## Commands
 
@@ -23,7 +23,7 @@ Presets here extend each other as `github>Jolt-Design/Renovate-Config:<name>`, w
 - When adding a preset, also add it to `default.json` or `generic.json` if it should be on by default, and give it an entry in the Files list in `README.md`.
 - `generic.json` is for presets any repo could use; Jolt-specific or opinionated ones go in `default.json`.
 - Don't rename or delete a preset file. Other repos extend presets by file name, so a rename breaks their Renovate config. To retire a preset, empty it or make it extend its replacement.
-- No branches or PRs here: commits go straight on `master`, with a short imperative subject. The pre-commit hook (`.pre-commit-config.yaml`) runs both checks on staged files.
+- No branches or PRs here: commits go straight on `master`, with a short imperative subject.
 
 ## Integrations
 
