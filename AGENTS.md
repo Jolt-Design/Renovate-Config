@@ -1,6 +1,6 @@
 # Jolt Renovate Config
 
-Shared [Renovate](https://docs.renovatebot.com/) presets for Jolt Design repos. Each root-level `*.json` (other than `biome.json`, `package.json` and `renovate.json`) is a preset that other repos extend as `github>Jolt-Design/Renovate-Config` (`default.json`) or `github>Jolt-Design/Renovate-Config:<file name without .json>`. This repo's own `renovate.json` extends its `default` preset.
+Shared [Renovate](https://docs.renovatebot.com/) presets for Jolt Design repos. Root-level `*.json` files are presets (the `validate` script in `package.json` lists the exceptions), which other repos extend as `github>Jolt-Design/Renovate-Config` (`default.json`) or `github>Jolt-Design/Renovate-Config:<file name without .json>`. `renovate.json` is this repo's own Renovate config.
 
 ## master is live
 
