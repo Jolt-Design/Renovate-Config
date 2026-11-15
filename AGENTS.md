@@ -9,6 +9,7 @@ Renovate fetches these presets from the default branch (`master`) of the GitHub 
 Presets here extend each other as `github>Jolt-Design/Renovate-Config:<name>`, which also loads from `master`. Pointing a repo at a ref (`github>Jolt-Design/Renovate-Config#<ref>`) only changes the top-level file; everything it extends still comes from `master`.
 
 - Never push to `master` without the user's approval for that push. The guard hook asks every time.
+- When asking for that approval, point out changes that would merge updates without review or let them through sooner, such as widening `automerge-rules.json` or loosening `age-gates.json`.
 - Run the checks below before every commit.
 
 ## Commands
