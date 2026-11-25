@@ -62,6 +62,10 @@ Add category labels to PRs a la Dependabot, as well as labelling vulnerability f
 
 Localise Renovate for Jolt, e.g. time zones, etc.
 
+### [mcp-versions](mcp-versions.json)
+
+Updates npm packages pinned to an exact version in a repo's `.mcp.json`, such as `@playwright/mcp@0.0.86`. Servers set to `@latest` aren't matched.
+
 ### [mise-match-specificity](mise-match-specificity.json)
 
 Keeps Mise tool versions as specific as they're written, so a major-only version like `node = "24"` stays major-only.
