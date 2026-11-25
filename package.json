@@ -6,7 +6,7 @@
     "validate": "renovate-config-validator --strict --no-global $(git ls-files ':(glob)*.json' ':!biome.json' ':!package.json')"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.6.8",
+    "@biomejs/biome": "2.6.9",
     "renovate": "^44.235.5"
   },
   "dependenciesMeta": {
