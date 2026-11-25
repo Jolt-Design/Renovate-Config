@@ -8,6 +8,7 @@
     "github>Jolt-Design/Renovate-Config:commit-messages",
     "github>Jolt-Design/Renovate-Config:ignore-paths",
     "github>Jolt-Design/Renovate-Config:labels",
+    "github>Jolt-Design/Renovate-Config:mcp-versions",
     "github>Jolt-Design/Renovate-Config:separate-branches"
   ]
 }
