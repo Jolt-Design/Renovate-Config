@@ -4,7 +4,9 @@
   "packageRules": [
     {
       "matchPackageNames": ["@joltdesign/scripts", "jolt-wp-updater"],
-      "automerge": true
+      "automerge": true,
+      "automergeSchedule": ["at any time"],
+      "ignoreTests": true
     },
     {
       "matchPackageNames": ["yarn", "yarnpkg/berry", "@yarnpkg/cli"],
