@@ -30,6 +30,19 @@ An overview of the purpose of the config files.
 
 Holds back updates until a release has been out for a minimum time, to help avoid supply-chain attacks. Jolt's own packages and update types where Renovate can't check the release age are exempt.
 
+### [automerge-biome](automerge-biome.json)
+
+Automerges minor and patch Biome updates at any time, once the PR's checks pass. It's not part of the default config: only add it to repos whose PR checks run Biome on everything it's installed for.
+
+```json
+{
+  "extends": [
+    "github>Jolt-Design/Renovate-Config",
+    "github>Jolt-Design/Renovate-Config:automerge-biome"
+  ]
+}
+```
+
 ### [automerge-rules](automerge-rules.json)
 
 Automerges low-risk updates, such as Jolt's own packages and minor Node and Yarn updates, outside office hours.

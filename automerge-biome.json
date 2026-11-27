@@ -1,0 +1,14 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "description": "Automerge Biome as soon as the PR's checks pass. Only for repos whose PR checks run Biome",
+      "matchPackageNames": ["@biomejs/biome", "npm:@biomejs/biome"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true,
+      "automergeSchedule": ["at any time"],
+      "ignoreTests": false,
+      "platformAutomerge": false
+    }
+  ]
+}
