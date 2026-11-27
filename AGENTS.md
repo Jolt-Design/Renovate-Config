@@ -27,4 +27,4 @@ Presets here extend each other as `github>Jolt-Design/Renovate-Config:<name>`, w
 
 ## Integrations
 
-- GitHub only. Use the `gh` CLI.
+- GitHub only.
