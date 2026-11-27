@@ -51,6 +51,7 @@ while IFS= read -r seg; do
   grep -qE "${GIT}push${END}" <<<"$seg" || continue
   args="$(sed -E "s/^.*${GIT}push//" <<<"$seg")"
   args="${args%%[\`)]*}"
+  args="${args//[\"\']/}"
   force=0 all=0 positional=()
   read -ra words <<<"$args"
   for w in "${words[@]}"; do
