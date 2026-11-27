@@ -6,6 +6,14 @@
     "**/.yarn/**",
     "**/.yarn/sdks/**",
     "**/wp-admin/**",
-    "**/wp-includes/**"
+    "**/wp-includes/**",
+    "**/vendor/**",
+    "**/examples/**",
+    "**/__tests__/**",
+    "**/test/**",
+    "**/tests/**",
+    "**/__fixtures__/**",
+    "**/.mise/locks/**",
+    "**/.config/mise/locks/**"
   ]
 }
