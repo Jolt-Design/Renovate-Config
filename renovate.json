@@ -1,5 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Renovate config for this repo only. It isn't part of the shared presets",
   "extends": [
     "github>Jolt-Design/Renovate-Config",
     "github>Jolt-Design/Renovate-Config:automerge-biome"
