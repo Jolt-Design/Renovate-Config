@@ -7,7 +7,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.6.9",
-    "renovate": "^44.235.5"
+    "renovate": "^45.3.0"
   },
   "dependenciesMeta": {
     "re2": {
